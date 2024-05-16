@@ -21,6 +21,11 @@ section {
     margin: 0 auto;
 }
 
+.link-box {
+    text-decoration: none;
+    border-radius: 20px;
+}
+
 
 /* REGOLE HEADER */
 
@@ -42,25 +47,46 @@ header .container {
 }
 
 #logo {
-    /* DEBUG */
-    width: 100px;
-    height: 50px;
-    background-color: chocolate;
+    display: block;
+    height: 50%;
 }
 
 #hamburger {
-    /* DEBUG */
-    width: 100px;
-    height: 50px;
-    background-color: chocolate;
+    height: 50%;
+}
+
+.fa-bars {
+    color: white;
+    font-size: xx-large;
 }
 
 #nav-list {
-    /* DEBUG */
-    width: 200px;
-    height: 50px;
-    background-color: bisque;
     display: none;
+}
+
+#nav-list ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav-list li {
+    line-height: 70px;
+    display: block;
+}
+
+#nav-list li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
 }
 
 /* regole header responsive */
