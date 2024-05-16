@@ -119,9 +119,51 @@ header .container {
 .demo-col {
     background-color: #b5ddff;
     margin-bottom: 20px;
+    border-radius: 20px;
     /* DEBUG */
     width: 100%;
-    min-height: 400px;
+}
+
+
+.col-text {
+    padding: 30px;
+    text-align: center;
+}
+
+#align-right {
+    text-align: left;
+}
+
+.col-text h3 {
+    color: #0084fd;
+    font-size: xx-large;
+}
+
+.col-text p {
+    padding: 20px 0;
+    color: #5c7182;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.blue-bg {
+    text-align: center;
+    display: block;
+    background-color: #0084fd;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.col-image img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.col-icon {
+    color: #0084fd;
+    font-size: 50px;
 }
 
 /* regole applicaizone demo responsive */
@@ -144,8 +186,39 @@ header .container {
         width: calc((100% / 3) * 2 - 5px);
     }
 
+    .col-image img {
+        width: 50%;
+    }
+
+    .blue-bg {
+        width: 40%;
+    }
 }
 
+/* desktop */
+@media all and (min-width: 1024px) {
+
+    #bigger-col {
+        display: flex;
+    }
+
+    #align-right {
+        width: 60%;
+    } 
+
+    .blue-bg {
+        width: 80%;
+    }
+
+    .col-image {
+        width: 40%;
+        align-self: flex-end;
+    }
+
+    .col-image img {
+        width: 100%;
+    }
+}
 
 /* regole sezione planning */
 
