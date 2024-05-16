@@ -57,8 +57,8 @@ header .container {
 }
 
 /* regole header responsive */
-
-@media all and (min-width: 1024px) {
+/* desktop */
+@media all and (min-width: 1025px) {
 
     .container {
         width: 65%;
@@ -71,4 +71,44 @@ header .container {
     #nav-list {
         display: inline-block;
     }
+}
+
+
+/* REGOLE MAIN */
+
+/* regole sezione applicazione demo */
+
+#demo-container {
+    margin-top: 100px;
+    display: block;
+}
+
+.demo-col {
+    background-color: #b5ddff;
+    margin-bottom: 20px;
+    /* DEBUG */
+    width: 100%;
+    min-height: 400px;
+}
+
+/* regole applicaizone demo responsive */
+
+/* tablet */
+@media all and (min-width: 569px) {
+
+    #demo-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .demo-col {
+        width: calc(100% / 3 - 10px);
+    }
+
+    #bigger-col {
+        width: calc((100% / 3) * 2 - 5px);
+    }
+
 }
