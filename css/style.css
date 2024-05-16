@@ -65,7 +65,7 @@ header .container {
 
 /* regole header responsive */
 /* desktop */
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
 
     .container {
         width: 65%;
@@ -101,7 +101,7 @@ header .container {
 /* regole applicaizone demo responsive */
 
 /* tablet */
-@media all and (min-width: 569px) {
+@media all and (min-width: 568px) {
 
     #demo-container {
         display: flex;
@@ -171,4 +171,84 @@ header .container {
      width: 100%;
      height: 200px;
      margin-bottom: 20px;
+}
+
+
+
+/* regole sezione benefit */
+
+.card {
+    background-color: white;
+    /* DEBUG */
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* regole benefit responsive */
+/* tablet */
+
+@media all and (min-width: 568px) {
+
+    #benefit-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        margin-bottom: 0;
+    }
+}
+
+/* desktop */
+
+@media all and (min-width: 1024px) {
+
+    .card {
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+
+
+/* regole sezione about us */
+
+#about-text {
+    /* DEBUG */
+    width: 100%;
+    height: 500px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+
+#cit {
+    /* DEBUG */
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+
+/* regole about us responsive */
+
+/* tablet */
+@media all and (min-width: 568px) {
+
+    #about-container {
+        display: flex;
+        gap: 30px;
+    }
+
+    #about-text {
+        width: 60%;
+    }
+
+    #cit {
+        width: calc(40% - 30px);
+    }
+
+
 }
