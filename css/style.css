@@ -250,5 +250,62 @@ header .container {
         width: calc(40% - 30px);
     }
 
+}
 
+
+
+/* regole sezione free trial */
+
+#trial-text {
+    /* DEBUG */
+    width: 100%;
+    height: 300px;
+    background-color: green;
+}
+
+/* regole free trial responsive */
+/* tablet */
+@media all and (min-width:568px) {
+    #trial-container {
+        width: 80%;
+    }
+}
+
+/* desktop */
+@media all and (min-width:1024px) {
+    #trial-container {
+        width: 50%;
+    }
+}
+
+
+
+/* REGOLE FOOTER */
+
+footer {
+    background-color: #333333;
+    padding: 50px 0;
+}
+
+#footer-text {
+     /* DEBUG */
+     width: 100%;
+     height: 150px;
+     background-color: red;
+     text-align: center;
+}
+
+/* regole footer responsive */
+/* tablet */
+@media all and (min-width:568px) {
+    #foot-container {
+        width: 70%;
+    }
+}
+
+/* desktop */
+@media all and (min-width:1024px) {
+    #foot-container {
+        width: 40%;
+    }
 }
