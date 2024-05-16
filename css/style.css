@@ -8,3 +8,67 @@
 body {
     font-family: "PT Sans", sans-serif;
 }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* REGOLE HEADER */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    /* DEBUG */
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+}
+
+#hamburger {
+    /* DEBUG */
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+}
+
+#nav-list {
+    /* DEBUG */
+    width: 200px;
+    height: 50px;
+    background-color: bisque;
+    display: none;
+}
+
+/* regole header responsive */
+
+@media all and (min-width: 1024px) {
+
+    .container {
+        width: 65%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #nav-list {
+        display: inline-block;
+    }
+}
