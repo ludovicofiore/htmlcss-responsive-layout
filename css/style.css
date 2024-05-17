@@ -370,7 +370,7 @@ header .container {
 .card {
     background-color: white;
     border-radius: 40px;
-    padding: 20px;
+    padding: 20px 30px;
     margin-bottom: 20px;
 }
 
@@ -431,18 +431,52 @@ header .container {
 /* regole sezione about us */
 
 #about-text {
-    /* DEBUG */
-    width: 100%;
-    height: 500px;
-    background-color: brown;
+    margin-bottom: 40px;
+}
+
+#about-text h2 {
+    color: #9792e4;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
-#cit {
-    /* DEBUG */
+#about-text p {
+    margin-bottom: 20px;
+}
+
+#cit-image {
+    width: 50%;
+    position: relative;
+}
+
+.fa-quote-left {
+    color: #9792e4;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#cit-image img {
     width: 100%;
-    height: 300px;
-    background-color: blue;
+    border-radius: 50%;
+}
+
+#cit p {
+    color: #9792e4;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#linkedin-box {
+    color: white;
+    background-color: #9792e4;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.fa-linkedin {
+    padding-right: 10px;
 }
 
 /* regole about us responsive */
@@ -461,6 +495,18 @@ header .container {
 
     #cit {
         width: calc(40% - 30px);
+    }
+
+    #cit-image {
+        width: 70%;
+    }
+
+    .fa-quote-left {
+        font-size: 40px;
+    }
+
+    #cit p {
+        font-size: 20px;
     }
 
 }
