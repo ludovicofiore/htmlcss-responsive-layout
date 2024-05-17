@@ -153,8 +153,17 @@ header .container {
     background-color: #0084fd;
     color: white;
     font-weight: bold;
-    padding: 10px 20px;
-    margin: 20px;
+    padding: 10px 50px;
+    margin: 20px 0;
+}
+
+.fa-apple {
+    padding-right: 10px;
+}
+
+.col-image {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .col-image img {
@@ -187,12 +196,18 @@ header .container {
         width: calc((100% / 3) * 2 - 5px);
     }
 
-    .col-image img {
-        width: 50%;
+    .col-image {
+        width: 70%;
+        margin-left: 0;
     }
 
-    .blue-bg {
-        width: 40%;
+}
+
+/* media query intermedia */
+@media all and (min-width: 700px) {
+    .col-image {
+        width: 50%;
+        
     }
 }
 
@@ -206,10 +221,6 @@ header .container {
     #align-right {
         width: 60%;
     } 
-
-    .blue-bg {
-        width: 80%;
-    }
 
     .col-image {
         width: 40%;
