@@ -89,7 +89,7 @@ header .container {
     color: white;
 }
 
-.white-bg {
+.header-box {
     background-color: white;
     color: black;
     padding: 5px 10px;
@@ -374,7 +374,7 @@ header .container {
     margin-bottom: 20px;
 }
 
-.card h2, h3 {
+.card h2, .card h3 {
     color: #9792e4;
     margin-bottom: 20px;
 }
@@ -516,10 +516,44 @@ header .container {
 /* regole sezione free trial */
 
 #trial-text {
-    /* DEBUG */
-    width: 100%;
-    height: 300px;
-    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+#caps-text {
+    color: #cccbf1;
+    margin-bottom: 15px;
+}
+
+#trial-text h3 {
+    font-size: 25px;
+}
+
+#trial-text h2 {
+    color: #fdc15f;
+    font-size: 50px;
+    margin: 25px 0;
+}
+
+#white-bg {
+    color: #9792e4;
+    background-color: white;
+    padding: 10px 40px;
+    margin: 20px 0;
+}
+
+.smaller-p {
+    font-size: smaller;
+    line-height: normal;
+}
+
+.smaller-p a {
+    color: white;
+}
+
+.fa-circle {
+    font-size: 5px;
+    vertical-align: middle;
 }
 
 /* regole free trial responsive */
@@ -547,11 +581,16 @@ footer {
 }
 
 #footer-text {
-     /* DEBUG */
-     width: 100%;
-     height: 150px;
-     background-color: red;
+    color: white;
      text-align: center;
+}
+
+#last-p {
+    margin-top: 70px;
+}
+
+#last-p a {
+    color: #7b77b5;
 }
 
 /* regole footer responsive */
